@@ -1,6 +1,6 @@
 # Desktop-notifier-using-python
-It is a program for desktop notifier which provides notification on your desktop.
-Firstly it asks title of the notification.
-Secondly it asks for after how many minutes do you want to get notification (time).
+It is a program for desktop notifiers that provides notifications on your desktop.
+Firstly it asks for the title of the notification.
+Secondly, it asks how many minutes you want to get a notification (time).
 Then the output will be the notification.
 -------THANK YOU-------

@@ -1,33 +1,53 @@
-# Desktop-notifier-using-python
+# Desktop Notifier Using Python
 
-1. **Importing Libraries**:
-   - The code begins by importing the necessary libraries:
-     - `Tkinter`: This is a standard GUI (Graphical User Interface) library for Python.
-     - `notification` from `plyer`: Plyer is a Python library for accessing features of your hardware, like notifications.
-     - `messagebox` from `tkinter`: This is used for displaying dialog boxes for messages or errors.
+A simple desktop notification application built with Python that allows users to schedule notifications with custom messages.
 
-2. **Setting Constants**:
-   - `BG_COLOR`: This variable holds the background color for the GUI.
+## Features
 
-3. **Function Definitions**:
-   - `noti_printer()`: This function is responsible for printing a notification with the title and message entered by the user.
-   - `timer()`: This function sets a timer based on the user input and schedules the notification to be printed after the specified time.
+- Set custom notification title and message
+- Choose time delay in seconds or minutes
+- Simple and intuitive GUI interface
 
-4. **Creating the GUI Window**:
-   - A Tkinter window is created with the title "Desktop Notifier" and configured with a specific size and background color.
+## Requirements
 
-5. **Creating GUI Elements**:
-   - Labels, entry fields, spinboxes, buttons, and radio buttons are created using Tkinter widgets.
-   - Labels are used to display text instructions.
-   - Entry fields allow users to input text.
-   - Spinbox is used for selecting a time interval.
-   - Button is used to trigger setting the notification.
-   - Radio buttons are used to select between seconds and minutes for the time interval.
+- Python 3.x
+- Tkinter (included in standard Python installation)
+- plyer 2.1.0
 
-6. **Layout Management**:
-   - The `grid()` method is used to arrange the widgets in rows and columns within the window.
+## Installation
 
-7. **Mainloop**:
-   - The `mainloop()` method is called on the Tkinter window, which starts the event loop and keeps the window open until it is closed by the user.
+1. Clone this repository:
+   ```
+   git clone https://github.com/Rajendra0309/Desktop-notifier-using-python.git
+   cd Desktop-notifier-using-python
+   ```
 
-Overall, this code creates a simple desktop notifier application where users can input a title, message, and time interval to schedule a notification. When the time elapses, a notification pops up on the desktop with the specified title and message.
+2. Install required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Run the application:
+```
+python desktop_notifier.py
+```
+
+1. Enter a notification title
+2. Enter your notification message
+3. Set the time delay (1-60)
+4. Select time unit (seconds or minutes)
+5. Click "Set Notification"
+
+## How It Works
+
+1. **User Interface**: Created with Tkinter, providing input fields for title, message, and time settings.
+2. **Notification System**: Uses the plyer library to display desktop notifications.
+3. **Timer Function**: Schedules notifications based on the specified time delay.
+
+## Project Structure
+
+- `desktop_notifier.py`: Main application file containing the GUI and notification logic
+- `requirements.txt`: List of required Python packages
+- `.gitignore`: Specifies files to be ignored by Git

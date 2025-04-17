@@ -1,0 +1,2 @@
+plyer==2.1.0
+# tkinter is included in standard Python library, no need to list it
